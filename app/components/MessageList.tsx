@@ -27,7 +27,7 @@ function MessageList() {
       <div className="p-4 border-t border-gray-300">
         {/* THIS IS GOING TO GET REPLACED WITH A PURE BUTTON COMPONENT WIRH SIMILAR STYLING */}
         <button
-          className="w-full bg-blue-500 text-white py-3 rounded-full font-semibold cursor-pointer hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:hover:cursor-not-allowed"
+          className="w-full bg-purple-500 text-white py-3 rounded-full font-semibold cursor-pointer hover:bg-purple-600 transition-colors disabled:opacity-50 disabled:hover:cursor-not-allowed"
           // DISABLED FOR NOW
           disabled
         >
