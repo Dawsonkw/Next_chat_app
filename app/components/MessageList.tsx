@@ -1,8 +1,8 @@
 function MessageList() {
   return (
-    <div className="flex flex-col h-full bg-white border-r border-gray-200">
+    <div className="flex flex-col h-full bg-white border-r border-gray-300">
       {/* Header */}
-      <div className="px-4 py-5 border-b border-gray-200">
+      <div className="px-4 py-5 border-b border-gray-300">
         <h1 className="text-2xl font-bold text-gray-800">Messages</h1>
         <div className="mt-3">
           {/* Search for conversations */}
@@ -24,7 +24,7 @@ function MessageList() {
       </div>
 
       {/* New Message Button */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-4 border-t border-gray-300">
         {/* THIS IS GOING TO GET REPLACED WITH A PURE BUTTON COMPONENT WIRH SIMILAR STYLING */}
         <button
           className="w-full bg-blue-500 text-white py-3 rounded-full font-semibold cursor-pointer hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:hover:cursor-not-allowed"
