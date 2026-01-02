@@ -1,3 +1,5 @@
+import NewMessage from "./NewMessage";
+
 function MessageList() {
   return (
     <div className="flex flex-col h-full bg-white border-r border-gray-300">
@@ -25,14 +27,7 @@ function MessageList() {
 
       {/* New Message Button */}
       <div className="p-4 border-t border-gray-300">
-        {/* THIS IS GOING TO GET REPLACED WITH A PURE BUTTON COMPONENT WIRH SIMILAR STYLING */}
-        <button
-          className="w-full bg-purple-500 text-white py-3 rounded-full font-semibold cursor-pointer hover:bg-purple-600 transition-colors disabled:opacity-50 disabled:hover:cursor-not-allowed"
-          // DISABLED FOR NOW
-          disabled
-        >
-          + New Message
-        </button>
+        <NewMessage />
       </div>
     </div>
   );

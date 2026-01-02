@@ -5,4 +5,10 @@ type Message = {
   user_name: string;
 };
 
-export type { Message };
+type SendMessageProps = {
+  message: string;
+  onSend: (content: string) => void;
+  onClick?: () => void;
+};
+
+export type { Message, SendMessageProps };
