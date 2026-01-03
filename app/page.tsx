@@ -1,5 +1,6 @@
 import MessageList from "./components/MessageList";
 import ChatInput from "./components/ChatInput";
+import ConversationArea from "./components/ConversationArea";
 
 export default function Home() {
   return (
@@ -8,9 +9,13 @@ export default function Home() {
         <div className="w-1/3 border-r border-gray-200">
           <MessageList />
         </div>
-
-        <div className=" flex items-center justify-end flex-col w-2/3">
-          <ChatInput />
+        <div className="flex flex-col w-2/3">
+          <div className="flex-1">
+            <ConversationArea />
+          </div>
+          <div className="flex items-center justify-end">
+            <ChatInput />
+          </div>
         </div>
       </div>
     </div>
