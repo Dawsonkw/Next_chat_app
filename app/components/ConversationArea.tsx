@@ -3,7 +3,9 @@ import React from "react";
 function ConversationArea() {
   return (
     <div>
-      <h1 className="text-gray-800 text-3xl font-bold">Conversation Area</h1>
+      <h1 className="text-gray-800 text-3xl font-bold p-4 flex justify-center items-center">
+        Conversation Area
+      </h1>
     </div>
   );
 }

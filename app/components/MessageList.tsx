@@ -1,3 +1,4 @@
+import MessagePreview from "./MessagePreview";
 import NewMessage from "./NewMessage";
 
 function MessageList() {
@@ -23,6 +24,12 @@ function MessageList() {
       <div className="flex-1 overflow-y-auto">
         {/* Individual conversations will appear here */}
         {/* CHAT MESSAGE INFO COMPONENT */}
+        <MessagePreview
+        // convention is to be name={name} ...etc but I want to have something hardcoded for now 
+          name="Grantusla"
+          timestamp="4:30AM"
+          preview="Hardcoded preview message goes brrrrrr..."
+        />
       </div>
 
       {/* New Message Button */}
