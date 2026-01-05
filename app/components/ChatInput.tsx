@@ -10,10 +10,14 @@ function ChatInput(): JSX.Element {
       <textarea
         value={message}
         onChange={(e) => setMessage(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+          }
+        }}
         className="flex-1 h-12 p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none overflow-hidden text-black placeholder-gray-500 text-left"
         placeholder="Type your message here..."
       ></textarea>
-
       <SendMessage
         message={message}
         onSend={() => {
