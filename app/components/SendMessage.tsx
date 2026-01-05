@@ -14,18 +14,20 @@ function SendMessage({ message, onSend }: SendMessageProps) {
         .from("messages")
         .insert([
           {
+            
             content: message,
             created_at: new Date().toISOString(),
             // ADD IN OTHER FIELDS WHEN YOU CREATE USER AUTHENTICATION!!
           }
         ]);
+        console.log("Supabase response:", { data, error });
         
       if (error) {
         console.error("Error sending message:", error);
         alert("Failed to send message. Please try again.");
       } else {
         console.log("Message sent:", data);
-        onSend(''); 
+        onSend(message); 
       }
     } catch (error) {
       console.error("Unexpected error:", error);
