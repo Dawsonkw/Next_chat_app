@@ -3,6 +3,7 @@ import ChatInput from "./components/ChatInput";
 import ConversationArea from "./components/ConversationArea";
 
 // TO DO
+//  NEED TO DO AUTH SYSTEM FIRST BEFORE DOING ANYTHING ELSE SO THAT MESSAGES CAN BE ASSOCIATED WITH USERS.
 // design chat interface layout. 
 // send the messafe from the chat input through to the SUPABASE server and store it in the database.
 // Need to create some kind of message fetching system to get messages from SUPABASE and display them in the conversation area.

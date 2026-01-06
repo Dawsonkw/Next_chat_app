@@ -1,5 +1,7 @@
 import React from "react";
 
+// Apply logic to conversation area component that pulls the message from tthe database and displays it in real-time
+
 function ConversationArea() {
   return (
     <div>
